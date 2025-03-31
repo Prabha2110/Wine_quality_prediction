@@ -34,7 +34,7 @@ class ModelEvaluation:
 
         (rmse, mae, r2) = self.eval_metrics(test_y, predicted_qualities)
         
-        # Saving metrics as local
+        
         scores = {"rmse": rmse, "mae": mae, "r2": r2}
         save_json(path=Path(self.config.metric_file_name), data=scores)
 

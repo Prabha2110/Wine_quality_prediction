@@ -29,7 +29,7 @@ class ConfigurationManager:
         data_ingestion_config = DataIngestionConfig(
             root_dir=config.root_dir,
             source_URL=config.source_URL,
-            local_data_file=config.local_data_file  # ✅ Removed unzip_dir
+            local_data_file=config.local_data_file  
         )
 
         return data_ingestion_config
@@ -46,7 +46,7 @@ class ConfigurationManager:
         data_validation_config = DataValidationConfig(
             root_dir=config.root_dir,
             STATUS_FILE=config.STATUS_FILE,
-            data_file=self.config.data_ingestion.local_data_file,  # ✅ Use the actual CSV file
+            data_file=self.config.data_ingestion.local_data_file,  
             all_schema=schema,
         )
 
