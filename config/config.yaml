@@ -10,7 +10,7 @@ data_ingestion:
 
 data_validation:
   root_dir: artifacts/data_validation
-  data_file: artifacts/data_ingestion/data.csv  # Corrected key name
+  data_file: artifacts/data_ingestion/data.csv  
   STATUS_FILE: artifacts/data_validation/status.txt
 
 
